@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%
+}
+
+.firstColumn, .secondColumn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.firstColumn{
+    border-right: solid 2.5px #c7c7c769;
+    border-left: solid 2.5px #c7c7c769;
+    width: 33%;
+}
+
+.secondColumn{
+    border-right: solid 2.5px #c7c7c769;
+    width: 66%;
+}
+
+.firstColumnTop, .firstColumnBot, .secondColumnTop, .secondColumnBot, .thirdColumnTop, .thirdColumnBot{
+    display: flex;
+    flex-direction: column; /* Ensures children stack vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    width: 100%; /* Full width of the column */
+    height: 50%; /* Adjust height as needed */
+    text-align: center; /* Center text inside */
+}
+
+.firstColumnTopContent{
+    width: 300px;
+}
+
+.firstColumnTop h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.secondColumnTop{
+    height: 100%;
+    padding-right: 40px;
+}
+
+.secondColumnTopAbove{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chartWrapper{
+    width: 90%;
+    height: 40%;
+}
+
+.statsWrapper, .statsWrapperTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+
+.statsWrapperTop{
+    height: 40%;
+}
+
+.statsWrapper{
+    padding-top: 20px;
+}
+
+.stats {
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    align-items: center;
+    display: flex;
+}
+
+.stats-left{
+    border-radius: 15px;
+    width: 40%;
+    height: 80%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-right{
+    margin-left: 6%;
+    border-radius: 15px;
+    width: 50%;
+    height: 80%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+
+
+
+.statsWrapper div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 15px;
+    gap: 10%;
+}
+
